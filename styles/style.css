@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #ff3895;
+    --cor-fonte-texto: #ff3895;
+    --cor-fonte-cabecalho: #ffffff;
+
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+
+    --tamanho-fonte-texto: 1.3rem;
+    --tamanho-fonte-titulo: 2.85rem;
+}
+
+body {
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho {
+    background: var(--cor-secundaria);
+    padding: 2% 5%;
+    text-align: center;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: var(--cor-fonte-cabecalho);
+    font-size: var(--tamanho-fonte-texto);
+}
+
+.principal {
+    padding: 5% 5%;
+}
+
+.principal__apresentacao {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao__imagem {
+    width: 100%;
+    max-width: 300px;
+}
+
+.principal__apresentacao__titulo,
+.principal__carta__titulo,
+.principal__album__titulo {
+    font-size: var(--tamanho-fonte-titulo);
+    color: var(--cor-fonte-texto);
+}
+
+.principal__carta {
+    margin: 5% 0;
+}
+
+.principal__carta__titulo {
+    padding-bottom: 3%;
+}
+
+.principal__carta__texto {
+    color: var(--cor-fonte-texto);
+    font-size: var(--tamanho-fonte-texto);
+}
+
+.principal__album__titulo {
+    text-align: center;
+}
+
+.principal__album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.principal__fotos__foto {
+    width: calc(33.33% - 20px); /* Para garantir três colunas em telas maiores */
+    max-width: 300px;
+}
+
+.rodape {
+    background: var(--cor-secundaria);
+    padding: 2% 5%;
+    text-align: center;
+}
+
+.rodape__texto {
+    color: var(--cor-fonte-cabecalho);
+    margin: 0.50rem;
+    font-size: var(--tamanho-fonte-texto);
+}
+
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .principal__apresentacao {
+        padding: 5% 10%;
+    }
+
+    .principal__album {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principal__fotos__foto {
+        width: 100%;
+    }
+}
+
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: var(--cor-fonte-cabecalho);
+    font-size: var(--tamanho-fonte-texto);
+}
+
+.principal {
+    padding: 5% 5%;
+}
+
+.principal__apresentacao {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao__imagem {
+    width: 100%;
+    max-width: 300px;
+}
+
+.principal__apresentacao__titulo,
+.principal__carta__titulo,
+.principal__album__titulo {
+    font-size: var(--tamanho-fonte-titulo);
+    color: var(--cor-fonte-texto);
+}
+
+.principal__carta {
+    margin: 5% 0;
+}
+
+.principal__carta__titulo {
+    padding-bottom: 3%;
+}
+
+.principal__carta__texto {
+    color: var(--cor-fonte-texto);
+    font-size: var(--tamanho-fonte-texto);
+}
+
+.principal__album__titulo {
+    text-align: center;
+}
+
+.principal__album {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__fotos__foto {
+    width: 100%;
+    max-width: 300px;
+}
+
+.rodape {
+    background: var(--cor-secundaria);
+    padding: 2% 5%;
+    text-align: center;
+}
+
+.rodape__texto {
+    color: var(--cor-fonte-cabecalho);
+    margin: 0.50rem;
+    font-size: var(--tamanho-fonte-texto);
+}
+
+@media (min-width: 1200px) {
+    .cabecalho__menu {
+        justify-content: flex-end;
+    }
+
+    .principal__apresentacao {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .principal__album {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
